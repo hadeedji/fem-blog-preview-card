@@ -1,0 +1,13 @@
+{
+  "type": "module",
+  "devDependencies": {
+    "prettier": "^3.3.2",
+    "prettier-plugin-css-order": "^2.1.2",
+    "vite": "^5.3.2"
+  },
+  "prettier": {
+    "plugins": [
+      "prettier-plugin-css-order"
+    ]
+  }
+}
