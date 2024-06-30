@@ -45,16 +45,13 @@ body {
   background-color: white;
 
   padding: 24px;
+  max-width: 24rem;
 
   .image {
     border-radius: 10px;
-
-    max-width: fit-content;
-    height: fit-content;
     overflow: hidden;
 
     img {
-      width: auto;
       height: 200px;
       object-fit: cover;
     }
@@ -64,6 +61,66 @@ body {
     display: flex;
     flex-direction: column;
     gap: 12px;
+
+    .learning {
+      border-radius: 4px;
+      background-color: #f4d04e;
+      padding: 4px 12px;
+      width: fit-content;
+
+      font-weight: 800;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .date {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    h1 {
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 1.5;
+    }
+
+    .description {
+      color: #7f7f7f;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    @media screen and (max-width: 576px) {
+      .learning {
+        font-size: 12px;
+      }
+
+      .date {
+        font-size: 12px;
+      }
+
+      & h1 {
+        font-size: 20px;
+      }
+
+      .description {
+        font-size: 14px;
+      }
+    }
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    p {
+      font-weight: 800;
+      font-size: 14px;
+      line-height: 1.5;
+    }
   }
 }
 
