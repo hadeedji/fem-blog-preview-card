@@ -4,7 +4,71 @@
   font-family: "Figtree";
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
 body {
-  font-weight: 500;
+  background-color: #f4d04e;
   font-family: "Figtree";
+}
+
+.container {
+  padding: 24px;
+  min-height: 100dvh;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  filter: drop-shadow(8px 8px black);
+  border: 1px black solid;
+  border-radius: 20px;
+
+  background-color: white;
+
+  padding: 24px;
+
+  .image {
+    border-radius: 10px;
+
+    max-width: fit-content;
+    height: fit-content;
+    overflow: hidden;
+
+    img {
+      width: auto;
+      height: 200px;
+      object-fit: cover;
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
